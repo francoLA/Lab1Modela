@@ -55,18 +55,18 @@ error = input('Ingrese el error a considerar: ');
 x0 = input('Ingrese el valor inicial: ');
 
 solucion = newton(f, max, error, x0);
-solucion
+solucion;
 
 
 len = 0;
 matriz = [];
 while len < 4
-    matriz = input('Ingrese una matriz de minimo 4 valores: ');
+    matriz = input('Ingrese un vector de minimo 4 valores: ');
     len = size(matriz);
     if len < 4
-        disp('Debe ingresar una matriz de minimo 4 valores!');
+        disp('Debe ingresar un vector de minimo 4 valores!');
     end
 end
 resultado = operar(matriz);
-resultado
+resultado;
 
